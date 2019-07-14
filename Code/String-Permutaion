@@ -1,0 +1,42 @@
+Java Program to Print All Permutation of a String
+
+package manoj;
+import java.util.*;
+
+public class tq1 {
+    
+    public static void main(String[] args) {
+        String s="123";
+       int i=0,j=1;
+       int x=1;
+         int c=s.length();
+       for(int z=c;z>0;z--)
+       {         
+           x=x*z;
+        }
+       System.out.println(x);
+       StringBuffer sb=new StringBuffer(s);
+       for(int k=1;k<=x/2;k++)
+       {
+           System.out.println(sb);
+           System.out.println(sb.reverse());
+           char t=' ';
+           t=sb.charAt(i);
+           sb.setCharAt(i, sb.charAt(j));
+           sb.setCharAt(j, t);
+     
+       }       
+    }
+}
+
+Output:
+Possibility : 6
+123
+321
+231
+132
+312
+213
+
+
+//Works efficiently <=3 letter String...
