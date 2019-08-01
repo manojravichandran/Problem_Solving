@@ -1,0 +1,29 @@
+import java.util.*;
+public class lcmfind {
+    public static void main(String[] args) {
+        int a=120,b=72;  // a and b change (or) get from user
+        if(a>b)
+        {
+            for(int i=1;i<=a*b;i++)
+            {
+                if((a*i)%b==0)
+                {
+                    System.out.println("Lcm is"+ a*i);
+                    break;
+                }
+            }
+        }
+        else
+        {
+             for(int i=1;i<=a*b;i++)
+            {
+                if((b*i)%a==0)
+                {
+                    System.out.println("Lcm is "+b*i);
+                    break;
+                }
+            }
+            
+        }
+    }
+}
