@@ -1,0 +1,52 @@
+import java.util.*;
+public class bintodeci {
+    public static void main(String[] args) {
+       // Scanner s=new Scanner(System.in);
+        //String bin=s.next();
+        String bin="110110111";
+        int des=Integer.parseInt(bin,2);
+        System.out.println(" 110110111 Binary to decimal"+des); // 110110111 Binary to decimal439
+        String binary="";
+        int dis=4;
+        while(dis>0)
+        {
+            int x=dis%2;
+            binary=binary+Integer.toString(x);
+            dis=dis/2;
+            
+        }
+        System.out.println("DEcimal 4 to Binary"+binary); //DEcimal 4 to Binary001 -- need to reverse to get actual binary
+        
+        System.out.println("check");
+        int a=55;
+        String bina="",hex="",oct="";
+        bina=Integer.toBinaryString(a);
+        hex=Integer.toHexString(a);
+        oct=Integer.toOctalString(a);
+        System.out.println(" 55 to BIN"+bina);
+        System.out.println("55 to Oct"+oct);
+        System.out.println("55 to HEX"+hex);
+        System.out.println("BIN TO DEC"+Integer.parseInt(bina,2));
+        System.out.println("HEX TO DEC"+Integer.parseInt(hex,16));
+        System.out.println("HEX TO DEC"+Integer.parseInt(oct,8));
+        
+    }
+}
+
+
+run:
+
+110110111 Binary to decimal439
+DEcimal 4 to Binary001
+
+check Methods :
+
+55 to BIN110111
+55 to Oct67
+55 to HEX37
+
+BIN TO DEC55
+HEX TO DEC55
+HEX TO DEC55
+
+BUILD SUCCESSFUL (total time: 0 seconds)
